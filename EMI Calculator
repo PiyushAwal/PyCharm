@@ -21,3 +21,29 @@ Total Amount: 637411.34133805
 Principle Amount: 500000
 With Interest: 10.0
 Tenuar: 60 month
+=================================================================================
+updated program
+P=int(input("Enter the principle amount:"))
+I=float(input("Enter the interest:"))
+Y=int(input("Enter the year:"))
+R=I/12/100
+n=Y*12
+EMI=P*R*(1+R)**n/((1+R)**n-1)
+Total_Amount=EMI*n
+print("EMI:",EMI)
+Total_Interest=Total_Amount-P
+print("Total Amount:",Total_Amount)
+print("Principle Amount:",P)
+print("Total Interest:",Total_Interest)
+print("Tenuar:",n,"month")
+
+
+output
+Enter the principle amount:>? 500000
+Enter the interest:>? 10
+Enter the year:>? 5
+EMI: 10623.522355634166
+Total Amount: 637411.34133805
+Principle Amount: 500000
+Total Interest: 137411.34133804997
+Tenuar: 60 month
